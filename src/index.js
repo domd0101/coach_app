@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDom from 'react-dom'
 import { createStore } from 'redux'
 import { Provider } from 'react-redux'
-import { BrowserRouter, Route, Redirect } from 'react-router-dom'
+import { BrowserRouter, Route } from 'react-router-dom'
 import { firebaseApp } from './firebase'
 // import history from './history'
 import { logUser } from './actions'
@@ -42,8 +42,8 @@ ReactDom.render(
 
             <hr/> */}
 
-        <Route exact path='/app' component={App} />
-        <Route path='/signin' component={SignIn} />
+        <Route path='/app' component={App} />
+        <Route exact path='/signin' component={SignIn} />
         <Route path='/signup' component={SignUp} />
 
        
